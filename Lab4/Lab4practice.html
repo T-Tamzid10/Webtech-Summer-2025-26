@@ -1,0 +1,81 @@
+<html>
+  <head>
+    <title>Lab 1 in Lab4</title>
+    <script src="Lab4practice.js "></script>
+  </head>
+
+  <body>
+
+    <form onsubmit="return validation()">
+
+      <h2>Student Registration Form</h2>
+
+      <table>
+
+        <tr>
+          <td>Name</td>
+          <td>
+            <input
+              type="text"
+              id="username"
+              placeholder="Enter your name"
+            />
+            <span style="color: red;" id="usernameErr"></span>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Password</td>
+          <td>
+            <input
+              type="password"
+              id="password"
+              placeholder="Enter your password"
+            />
+            <span style="color: red;" id="passwordErr"></span>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Gender</td>
+          <td>
+            <input type="radio" name="gender" value="male" />Male
+            <input type="radio" name="gender" value="female" />Female
+            <span style="color: red;" id="genderErr"></span>
+          </td>
+        </tr>
+
+        <tr>
+          <td>DOB</td>
+          <td>
+            <input type="date" id="dob" />
+            <span style="color: red;" id="dobErr"></span>
+          </td>
+        </tr>
+
+        <tr>
+          <td>File</td>
+          <td>
+            <input type="file" id="file" />
+            <span style="color: red;" id="fileErr"></span>
+          </td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td>
+            <input type="submit" value="Submit" />
+          </td>
+        </tr>
+
+      </table>
+
+    </form>
+
+    <p>
+      Already have an account?
+      <a href="https://portal.aiub.edu">Sign In</a>
+    </p>
+
+  </body>
+</html>
